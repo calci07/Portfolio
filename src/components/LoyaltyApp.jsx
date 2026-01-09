@@ -91,7 +91,7 @@ const LoyaltyApp = () => {
       <div className="mb-8 p-6 bg-white border-4 border-black rounded-xl shadow-[8px_8px_0px_0px_rgba(0,0,0,0.1)]">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b-2 border-gray-200 pb-4 mb-4">
           <div>
-            {/* IMPROVED FONT: Tighter tracking for impactful headline */}
+           
             <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter text-blue-700">
               LOYALTY_TRACKER<span className="text-black">.EXE</span>
             </h2>
@@ -117,10 +117,10 @@ const LoyaltyApp = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-[800px]">
         
-       {/* left content */}
+    {/* left */}
         <div className="card-neo flex flex-col h-full overflow-hidden relative">
           <div className="p-4 bg-black text-white flex justify-between items-center z-10">
-            {/* IMPROVED FONT: Monospaced header with wide tracking */}
+          
             <h3 className="font-bold font-mono tracking-widest text-sm">USER_QUERY_TERMINAL</h3>
             <div className="flex gap-2">
                <div className="w-3 h-3 bg-red-500 rounded-full border border-gray-600"></div>
@@ -157,22 +157,22 @@ const LoyaltyApp = () => {
             {result ? (
               <div className="space-y-6 animate-fadeIn">
                 <div className="grid grid-cols-2 gap-4">
-                  {/* ID BOX */}
+                 
                   <div className="bg-white border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
                     <div className="text-[10px] font-black tracking-widest text-gray-400 uppercase mb-1">CUSTOMER ID</div>
                     <div className="text-3xl md:text-4xl font-black text-slate-900 tabular-nums tracking-tight">#{result.customerId}</div>
                   </div>
-                  {/* SPENT BOX */}
+                 
                   <div className="bg-green-100 border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
                     <div className="text-[10px] font-black tracking-widest text-green-700 uppercase mb-1">TOTAL SPENT</div>
                     <div className="text-3xl md:text-4xl font-black text-green-900 tabular-nums tracking-tight">${result.rfm.monetary.toFixed(2)}</div>
                   </div>
-                  {/* FREQUENCY BOX */}
+               
                   <div className="bg-purple-100 border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
                     <div className="text-[10px] font-black tracking-widest text-purple-700 uppercase mb-1">FREQUENCY</div>
                     <div className="text-3xl md:text-4xl font-black text-purple-900 tabular-nums tracking-tight">{result.rfm.frequency} <span className="text-lg font-bold text-purple-600/70">Orders</span></div>
                   </div>
-                  {/* RECENCY BOX */}
+                 
                   <div className="bg-yellow-100 border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
                     <div className="text-[10px] font-black tracking-widest text-yellow-700 uppercase mb-1">RECENCY</div>
                     <div className="text-3xl md:text-4xl font-black text-yellow-900 tabular-nums tracking-tight">{result.rfm.recency} <span className="text-lg font-bold text-yellow-600/70">Days</span></div>
