@@ -8,11 +8,11 @@ const TechStack = () => {
   ];
 
   return (
-    // REMOVED: 'bg-white' and changed py-24 to py-20 to match Gallery
+
     <section className="py-20">
       <div className="max-w-4xl mx-auto px-4 text-center">
         
-        {/* Updated Title to match Gallery style (smaller font, underline) */}
+        
         <h2 className="text-3xl font-bold text-slate-900 mb-4 uppercase tracking-tight">
           TECH STACK
         </h2>

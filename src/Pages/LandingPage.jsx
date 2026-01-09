@@ -11,12 +11,12 @@ import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import BackgroundMusic from '../components/BackgroundMusic';
 import ThreeDArt from '../components/ThreeDArt';
+import RevealOnScroll from '../components/RevealOnScroll';
 
 const LandingPage = () => {
   const [introFinished, setIntroFinished] = useState(false);
 
   useEffect(() => {
- 
     if (!introFinished) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -26,25 +26,45 @@ const LandingPage = () => {
 
   return (
     <>
-   {/* intro */}
+      {/* intro */}
       {!introFinished && <TerminalIntro onComplete={() => setIntroFinished(true)} />}
       
-      {/* content */}
-      <div className={`transition-opacity duration-500 ${introFinished ? 'opacity-100' : 'opacity-0'}`}>
+     
+      <div className={`transition-opacity duration-1000 ease-in-out ${introFinished ? 'opacity-100' : 'opacity-0'}`}>
         <Navbar />
         <Hero />
         
-       {/* minecraft */}
+        {/* minecraft */}
         {introFinished && <BackgroundMusic />}
 
         <div className="space-y-12 md:space-y-24 pb-12 md:pb-24">
-          <LoyaltyApp />
-          <GameShowcase />
-          <ThreeDArt />
-          <Organizations />
-          <Experience />
-          <TechStack />
-          <Gallery />
+          <RevealOnScroll>
+            <LoyaltyApp />
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <GameShowcase />
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <ThreeDArt />
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <Organizations />
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <Experience />
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <TechStack />
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <Gallery />
+          </RevealOnScroll>
         </div>
         
         <Footer />
