@@ -10,6 +10,7 @@ import TechStack from '../components/TechStack';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import BackgroundMusic from '../components/BackgroundMusic';
+import ThreeDArt from '../components/ThreeDArt';
 
 const LandingPage = () => {
   const [introFinished, setIntroFinished] = useState(false);
@@ -39,6 +40,7 @@ const LandingPage = () => {
         <div className="space-y-24 pb-24">
           <LoyaltyApp />
           <GameShowcase />
+          <ThreeDArt />
           <Organizations />
           <Experience />
           <TechStack />
