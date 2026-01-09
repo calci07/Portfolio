@@ -37,7 +37,7 @@ const LandingPage = () => {
        {/* minecraft */}
         {introFinished && <BackgroundMusic />}
 
-        <div className="space-y-24 pb-24">
+        <div className="space-y-12 md:space-y-24 pb-12 md:pb-24">
           <LoyaltyApp />
           <GameShowcase />
           <ThreeDArt />
