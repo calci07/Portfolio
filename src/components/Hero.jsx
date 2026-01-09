@@ -21,14 +21,14 @@ const Hero = () => {
           <div className="absolute bottom-2 right-0 bg-red-600 text-white font-bold px-3 py-1 sm:px-4 border-2 border-black rounded-full text-[10px] sm:text-xs transform rotate-12 group-hover:rotate-0 transition-transform z-20">CLICK ME</div>
         </button>
 
-
+       
         <h1 className="text-5xl sm:text-7xl md:text-9xl font-black text-black leading-none mb-6 w-full break-words">
           GERALD<br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">BITAGO</span>
         </h1>
         
-
-        <div className="text-lg md:text-2xl font-bold text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed flex flex-wrap items-center justify-center gap-2">
+     
+        <div className="text-lg md:text-2xl font-bold text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed flex items-center justify-center gap-2 whitespace-nowrap overflow-hidden">
           <span>Building</span>
           
           <RotatingText
@@ -44,17 +44,16 @@ const Hero = () => {
             rotationInterval={3000}
           />
           
-          <span>systems & solving problems.</span>
+          <span>systems.</span>
         </div>
 
-       
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <a href="#app" className="btn-neo px-10 py-4 bg-blue-600 text-white font-black text-xl hover:bg-blue-700 w-full sm:w-auto flex justify-center">LAUNCH APP</a>
           <a href="#experience" className="btn-neo px-10 py-4 bg-white text-black font-black text-xl hover:bg-gray-100 w-full sm:w-auto flex justify-center">VIEW JOURNEY</a>
         </div>
       </div>
 
-     
+    
       {showModal && (
         <div className="fixed inset-0 z-[100] modal-overlay flex items-center justify-center p-4 animate-fadeIn">
           <div className="bg-white p-2 rounded-xl border-4 border-black shadow-[10px_10px_0px_0px_rgba(255,255,255,0.2)] max-w-sm w-full relative">
