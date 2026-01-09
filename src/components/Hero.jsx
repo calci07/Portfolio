@@ -9,7 +9,6 @@ const Hero = () => {
     <section className="min-h-[90vh] flex items-center justify-center pt-28 pb-10 relative overflow-hidden bg-white border-b-4 border-black">
       <div className="max-w-7xl mx-auto px-4 text-center z-10 flex flex-col items-center w-full">
         
-      
         <button onClick={() => setShowModal(true)} className="group relative mb-10 transition-transform duration-300 hover:scale-105" title="Click to View ID">
           <div className="w-32 h-32 sm:w-48 sm:h-48 rounded-full bg-gray-200 border-4 border-black overflow-hidden relative shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
              <img 
@@ -21,19 +20,17 @@ const Hero = () => {
           <div className="absolute bottom-2 right-0 bg-red-600 text-white font-bold px-3 py-1 sm:px-4 border-2 border-black rounded-full text-[10px] sm:text-xs transform rotate-12 group-hover:rotate-0 transition-transform z-20">CLICK ME</div>
         </button>
 
-       
         <h1 className="text-5xl sm:text-7xl md:text-9xl font-black text-black leading-none mb-6 w-full break-words">
           GERALD<br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">BITAGO</span>
         </h1>
         
-     
         <div className="text-lg md:text-2xl font-bold text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed flex items-center justify-center gap-2 whitespace-nowrap overflow-hidden">
-          <span>Building</span>
+          <span>Turning ideas into</span>
           
           <RotatingText
-            texts={['interactive', 'scalable', 'modern', 'robust']}
-            mainClassName="inline-flex align-middle bg-yellow-400 text-black overflow-hidden py-0.5 justify-center rounded-lg font-black w-[115px] md:w-[180px]"
+            texts={['scalable', 'tangible', 'digital', 'robust']}
+            mainClassName="inline-flex align-middle bg-yellow-400 text-black overflow-hidden py-0.5 justify-center rounded-lg font-black w-[100px] md:w-[140px]"
             staggerFrom="last"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
@@ -44,7 +41,7 @@ const Hero = () => {
             rotationInterval={3000}
           />
           
-          <span>systems.</span>
+          <span>reality.</span>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -53,7 +50,6 @@ const Hero = () => {
         </div>
       </div>
 
-    
       {showModal && (
         <div className="fixed inset-0 z-[100] modal-overlay flex items-center justify-center p-4 animate-fadeIn">
           <div className="bg-white p-2 rounded-xl border-4 border-black shadow-[10px_10px_0px_0px_rgba(255,255,255,0.2)] max-w-sm w-full relative">
