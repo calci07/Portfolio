@@ -11,12 +11,12 @@ import img6 from '../assets/pictures/6.jpg';
 const Gallery = () => {
   
   const proofs = [
-    { id: 1, title: "Arduino Hackathon", src: img1 }, 
+    { id: 1, title: "IoT Conference", src: img1 }, 
     { id: 2, title: "Hiraya Ideathon", src: img2 },
-    { id: 3, title: "IoT Conference", src: img3 },
-    { id: 4, title: "AI Challenge", src: img4 },
-    { id: 5, title: "Hackathon Proof 5", src: img5 },
-    { id: 6, title: "Hackathon Proof 6", src: img6 },
+    { id: 3, title: "Hiraya Ideathon", src: img3 },
+    { id: 4, title: "Arduino Day Hackathon", src: img4 },
+    { id: 5, title: "Arduino Day Hackathon", src: img5 },
+    { id: 6, title: "Arduino Day Hackathon", src: img6 },
   ];
 
   return (

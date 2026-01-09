@@ -13,15 +13,15 @@ import d9 from '../assets/pictures/3d9.jpg';
 const ThreeDArt = () => {
  
   const arts = [
-    { id: 1, title: "3D Artwork 1", src: d1 },
-    { id: 2, title: "3D Artwork 2", src: d2 },
-    { id: 3, title: "3D Artwork 3", src: d3 },
-    { id: 4, title: "3D Artwork 4", src: d4 },
-    { id: 5, title: "3D Artwork 5", src: d5 },
-    { id: 6, title: "3D Artwork 6", src: d6 },
-    { id: 7, title: "3D Artwork 7", src: d7 },
-    { id: 8, title: "3D Artwork 8", src: d8 },
-    { id: 9, title: "3D Artwork 9", src: d9 },
+    { id: 1, title: "Crash Landing On You", src: d1 },
+    { id: 2, title: "Crash Landing On You", src: d2 },
+    { id: 3, title: "Spirited Away", src: d3 },
+    { id: 4, title: "Spirited Away", src: d4 },
+    { id: 5, title: "Spirited Away", src: d5 },
+    { id: 6, title: "Spirited Away", src: d6 },
+    { id: 7, title: "Spirited Away", src: d7 },
+    { id: 8, title: "Gravity Falls", src: d8 },
+    { id: 9, title: "Gravity Falls", src: d9 },
   ];
 
   return (
